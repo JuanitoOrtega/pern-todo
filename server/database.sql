@@ -1,0 +1,9 @@
+CREATE DATABASE perntodo;
+
+CREATE TABLE todo (
+  id SERIAL PRIMARY KEY,
+  description VARCHAR(255) NOT NULL
+);
+
+ALTER TABLE todo 
+DROP COLUMN created_at;
